@@ -25,7 +25,9 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::group(['middleware' => ['web', 'admin.login'], 'prefix' => 'admin', 'namespace' => 'Admin'], function () {
 
-	Route::get('/', 'IndexController@index');
+	// 后台管理员首页
+	Route::get('/', 'IndexController@index'); 
+	// 后台管理员首页
 	Route::get('/index', 'IndexController@index');
 
 	Route::get('/user', 'UserController@index');

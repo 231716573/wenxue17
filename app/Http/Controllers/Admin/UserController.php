@@ -43,7 +43,6 @@ class UserController extends Controller
   }
 
   public function detail(Request $request) {
-  	// dd($request->account);
   	$user = Users::where('account', $request->account)->first();
 
   	$data = [
@@ -79,6 +78,7 @@ class UserController extends Controller
   		return view('admin.account');
 
   	} else if ($request->isMethod('post')) {
+      
       $user = Users::where('account', session('user.account'))->first();
 
       if ($user->authority != '超级管理员') {
@@ -88,7 +88,6 @@ class UserController extends Controller
         echo '非本人账号，擅自修改资料者，死全家！';
         return;
       }
-
       $images=$request->file('thumb');
       if ($images) {
         $filedir="upload/thumb/";

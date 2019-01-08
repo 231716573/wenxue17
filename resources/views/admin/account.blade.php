@@ -63,20 +63,6 @@
       <input type="text" name="address" required  lay-verify="required" placeholder="请输入通讯地址" autocomplete="off" class="layui-input" value="{{session('user.address')}}">
     </div>
   </div>
-
-<!--   <div class="layui-form-item">
-    <label class="layui-form-label">选择框</label>
-    <div class="layui-input-block">
-      <select name="city" lay-verify="required">
-        <option value=""></option>
-        <option value="0">北京</option>
-        <option value="1">上海</option>
-        <option value="2">广州</option>
-        <option value="3">深圳</option>
-        <option value="4">杭州</option>
-      </select>
-    </div>
-  </div> -->
   <div class="layui-form-item">
     <div class="layui-input-inline" style="text-align: right;">
       <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
@@ -126,13 +112,13 @@ function getObjectURL(file) {
     return url ;  
 } 
 
-layui.use('form', function(){
-  var form = layui.form;
+// layui.use('form', function(){
+//   var form = layui.form;
   
-  //监听提交
-  form.on('submit(formDemo)', function(data){
+//   //监听提交
+//   form.on('submit(formDemo)', function(data){
 
-  });
-});
+//   });
+// });
 </script>
 @endsection
