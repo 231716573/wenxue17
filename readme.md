@@ -3,7 +3,7 @@
 #### 2019-01-07 网站正式上线
 #### 2019-01-08 在服务器创建数据库，创建账户、对接完毕，sqlyog登录正常
 #### 2019-01-10 git代码管理添加完毕，git add/commit/pull/push/blame/log/remote/branch/checkout测试正常
-
+#### 2019-01-13 家里电脑对接上git
 
 # Laravel PHP Framework
 
